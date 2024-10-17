@@ -913,16 +913,6 @@ body {
 
 
 /* Popup styling */
-.popup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
 
 .popup-content {
   background-color: white;
@@ -1028,4 +1018,45 @@ button {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.popup-contentcheckout {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%; 
+  max-width: 600px; 
+  position: relative; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.popup-contentcheckout .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.popup-contentcheckout input, .popup-contentcheckout select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-contentcheckout button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup-contentcheckout button:hover {
+  background-color: #2980b9;
 }

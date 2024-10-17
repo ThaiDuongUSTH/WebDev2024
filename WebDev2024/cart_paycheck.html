@@ -118,8 +118,37 @@
                 <button class="checkout-button">Buy all</button>
             </div>
         </div>
-    </section>
+    
 
+    <div id="checkoutPopup" class="popup">
+        <div class="popup-contentcheckout">
+            <span class="close-btn">&times;</span>
+                <h2>Customer Information</h2>
+                <form id="customerForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="payment">Payment method:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cash">Cash on Delivery</option>
+                    </select>
+
+                    <button type="submit">Submit Order</button>
+                </form>
+        </div>
+    </div>
+</section>
     <!-- footer -->
 
     <section class="footer">
@@ -164,13 +193,11 @@
     <div class="copyright">
         <li><a href="http://127.0.0.1:5501/WebDev2024/WebDev2024/index.html" target="_blank">&#169; 2024 USTHPICKLEBALL.VN - Created by Group 24</a></li>
     </div>
-    
 
     <!-- link Swiper css + js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-    <!-- link to js -->
     <script src="main.js"></script>
+
 </body>
 </html>

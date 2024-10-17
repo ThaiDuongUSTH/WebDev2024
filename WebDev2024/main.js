@@ -194,8 +194,17 @@ window.onclick = (e) => {
     }
 };
 
+// Get the popup element and the buy button
+const checkoutPopup = document.getElementById("checkoutPopup");
+const buyButton = document.querySelector(".checkout-button");
+const closeBtn = document.querySelector("#checkoutPopup .close-btn"); 
 
+// Show popup when clicking the "Buy all" button
+buyButton.addEventListener("click", function() {
+    checkoutPopup.style.display = "flex"; 
+});
 
-
-
-  
+// Close the popup when clicking the close button
+closeBtn.addEventListener("click", function() {
+    checkoutPopup.style.display = "none";
+});
