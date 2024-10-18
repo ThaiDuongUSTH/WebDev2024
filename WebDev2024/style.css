@@ -203,7 +203,7 @@ header.shadow{
 }
 
 .cart img{
-  width: 100px;
+  width: 75px;
 }
 
 .cart .box{
@@ -688,6 +688,21 @@ body {
   width: 100%;
 }
 
+.products .more{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.products .more a{
+  color: #007bff; 
+  text-decoration: none;
+  align-items: center; 
+}
+
+.products .more a:hover{
+  text-decoration: underline;
+}
+
 .product-container .box{
   position: relative;
   padding: 10px;
@@ -910,10 +925,7 @@ body {
 .paycheck .checkout-button:hover {
   background-color: #2980b9;
 }
-
-
 /* Popup styling */
-
 .popup-content {
   background-color: white;
   margin: 10% auto;
@@ -923,16 +935,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transform: scale(0); 
-  opacity: 0; 
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
 
-.popup.active .popup-content {
-  transform: scale(1); 
-  opacity: 1; 
 }
-
 .popup-left {
   width: 40%;
   padding-right: 20px;
